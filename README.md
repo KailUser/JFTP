@@ -27,8 +27,6 @@ This ftp client created with the help of ftplib can be used for various purposes
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/KailUser/JFTP?style=flat-square)
 
-![GitHub Release Date](https://img.shields.io/github/release-date/KailUSer/JFTP)
-
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/KailUser/JFTP)
 
 ![GitHub followers](https://img.shields.io/github/followers/KailUSer?style=social)
