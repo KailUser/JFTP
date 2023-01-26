@@ -1,4 +1,7 @@
 
+![Logo](https://s9.gifyu.com/images/Bungee-Shade.gif)
+
+
 ## JFTP
 This ftp client created with the help of ftplib can be used for various purposes there are no restrictions on communication
 ## Screenshots
@@ -27,6 +30,8 @@ This ftp client created with the help of ftplib can be used for various purposes
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/KailUser/JFTP?style=flat-square)
 
+![GitHub Release Date](https://img.shields.io/github/release-date/KailUSer/JFTP)
+
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/KailUser/JFTP)
 
 ![GitHub followers](https://img.shields.io/github/followers/KailUSer?style=social)
@@ -35,3 +40,12 @@ This ftp client created with the help of ftplib can be used for various purposes
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
+
+## Installation
+
+1. Install tkinter, ftplib and colorama
+
+```python
+    python main.py or gui.py
+```
+    
