@@ -6,10 +6,11 @@ import sys
 import paramiko
 
 def ftp():
+    os.system('cls')
     server = input("Enter the FTP server: ")
     username = input("Enter the username: ")
     password = input("Enter the password: ")
-
+    os.system('cls')
     print(Fore.RED + "Server: ", server)
     print(Fore.RED + "Username: ", username)
     print(Fore.RED + "Password: ", password)
@@ -17,6 +18,7 @@ def ftp():
     confirm = input("Is the above information correct? (y/n)")
     if confirm.lower() == 'y':
         while True:
+            os.system('cls')
             ftp = ftplib.FTP()
             ftp.connect(server, 21)
             ftp.login(user=username, passwd=password)
@@ -54,3 +56,19 @@ def ftp():
                 print("Invalid choice. Please try again.")
     else:
         print("Exiting the program.")
+def connect_ssh():
+    os.system('cls')
+    hostname = input("Server: ")
+    username = input("Login: ")
+    password = input("Password: ")
+    os.system('cls')
+    print(Fore.RED + "Server: ", hostname)
+    print(Fore.RED + "Username: ", username)
+    print(Fore.RED + "Password: ", password)
+
+    confirm = input("Is the above information correct? (y/n)")
+    if confirm.lower() == 'y':
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect(hostname=hostname, username=username, password=password)
+        return ssh

@@ -1,2 +1,2 @@
 @echo off
-python %cd%/files/gui.py
+python -b %cd%/files/gui.py
